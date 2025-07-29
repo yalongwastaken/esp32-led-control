@@ -16,8 +16,7 @@ struct LED_Pattern {
   unsigned long prev_time;
 
   // Constructor
-  LED_Pattern(std::vector<int> seq) : 
-    sequence(seq), index(0), prev_time(0) {};
+  LED_Pattern(std::vector<int> seq): sequence(seq), index(0), prev_time(0) {};
 };
 
 // Variables

@@ -5,8 +5,8 @@
 #include <Arduino.h>
 
 // Defines
-#define LED_PIN 2         // Built-In LED
-#define LED_DELAY 1000    // Delay in milliseconds
+#define LED_PIN 2
+#define LED_DELAY 1000
 
 // State logic
 bool led_state = false;
@@ -24,6 +24,7 @@ void setup() {
 }
 
 void loop() {
+  // Toggle state
   led_state = !led_state;
   digitalWrite(LED_PIN, led_state);
   Serial.print("Blinking LED 1 (Arduino): ");

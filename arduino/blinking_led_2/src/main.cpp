@@ -17,6 +17,7 @@ void setup() {
   Serial.begin(115200);
   Serial.println("Initializeing LED Blink (Non-blocking)");
 
+  // Initialization
   pinMode(LED_PIN, OUTPUT);
   digitalWrite(LED_PIN, led_state);
 }

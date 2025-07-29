@@ -30,13 +30,16 @@ void led_blink(void *pvParameters) {
     gpio_config(&gpio_conf);
     bool led_state = false;
 
+    // Timing
+    TickType_t last_wake_time = xTaskGetTickCount();
+
     // Logic loop
     while (1) {
         // toggle LED state
         led_state = !led_state;
         gpio_set_level(LED_GPIO, led_state);
         ESP_LOGI(TAG, "LED %s", led_state ? "ON" : "OFF");
-        vTaskDelay(pdMS_TO_TICKS(LED_DELAY));
+        vTaskDelayUntil(&last_wake_time, pdMS_TO_TICKS(1000));
     }
 }
 
