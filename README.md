@@ -10,7 +10,7 @@ A collection of ESP32 LED control implementations demonstrating various programm
 - **`blinking_led_3/`** - Non-blocking LED control with serial communication for speed adjustment
 - **`logging/`** - Logging functionality for modularity and reuse in future Arduino-based ESP32 projects
 
-### ESP-IDF Framework (`esp_idf/`)
+### ESP-IDF Framework (`esp-idf/`)
 - **`blinking_led_1/`** - Simple non-blocking LED implementation
 - **`blinking_led_2/`** - Advanced RTOS multi-tasking implementation with UART communication and multiple LED states/rates
 - **`logging/`** - Logging functionality for modularity and reuse in future ESP-IDF-based ESP32 projects
